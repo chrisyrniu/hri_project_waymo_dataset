@@ -27,7 +27,7 @@ for i in range(start, end):
         print(parsed['state/type'][ia_idx[0][0]])
         print(parsed['state/type'][ia_idx[1][0]])
         if parsed['state/type'][ia_idx[0][0]] == 1 and parsed['state/type'][ia_idx[1][0]] == 1:
-            print('hey')
+            continue
 
     rm_cmd = f'rm training_tfexample.tfrecord-0{i:04d}-of-01000'
     os.system(rm_cmd)
